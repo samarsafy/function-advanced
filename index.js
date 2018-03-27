@@ -9,7 +9,7 @@ myFunc();
   "use strict";
   alert("welcome to my website");
 })();
-*/
+
 function convertUsdToEuro() {
   "use strict";
   var amount = document.getElementById("dollar").value,
@@ -28,4 +28,26 @@ function convertUsdToEuro() {
 else {
   message.innerHTML = amount + " Dollar is worth " + result + " Euro";
 }
+}
+*/
+
+
+
+var season = prompt("whats the best season for you?");
+switch (season) { //switch function
+  case "winter":
+    alert("winter is too cold");
+    break;
+  case "summer": 
+  alert("summer is too hot");
+    break;
+  case "Autumn":
+  alert("Autumn is cloudy");
+  break; 
+  case "spring":
+  alert("Spring is amazing");
+  break;
+  default:
+  alert("you didnt enter a season name");
+  break;
 }
