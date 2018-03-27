@@ -1,4 +1,4 @@
-/*function myFunc() {
+function myFunc() {
   "use strict";
   alert("My Function");
 }
@@ -29,7 +29,7 @@ else {
   message.innerHTML = amount + " Dollar is worth " + result + " Euro";
 }
 }
-*/
+
 
 
 
