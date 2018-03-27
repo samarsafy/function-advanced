@@ -51,3 +51,32 @@ switch (season) { //switch function
   alert("you didnt enter a season name");
   break;
 }
+
+var myName = "sahar"; // Global Scope
+console.log(myName); // 1 global 
+function myNameFunc(){
+
+  "use strict";
+  console.log(myName); //undefined
+  var myName = "samar"; // local scope, cant be exixt from outside the function
+console.log(myName); 
+}
+console.log(myName); // 2 global
+myNameFunc(); // 3 local 
+console.log(myName); // 4
+
+var x = 1; 
+function  changeXto2() {
+  "use strict";
+   x = 2;
+  
+}
+function changeXto3(){
+  "use strict";
+   x = 3;
+}
+console.log(x); //1
+changeXto2();
+console.log(x); // 2
+changeXto3();
+console.log(x);//3
