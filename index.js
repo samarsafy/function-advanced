@@ -17,6 +17,6 @@ function convertUsdToEuro() {
   message = document.getElementById("message");
   message.innerHTML = amount + " Dollar is worth " + result + " Euro"; 
   if(amount === ""){
-    message.innerHTML = "this field cant be empty"
+    message.innerHTML = "this field cant be empty";
   } 
 }
