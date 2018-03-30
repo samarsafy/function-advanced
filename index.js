@@ -1,4 +1,4 @@
-function myFunc() {
+/*function myFunc() {
   "use strict";
   alert("My Function");
 }
@@ -80,3 +80,62 @@ changeXto2();
 console.log(x); // 2
 changeXto3();
 console.log(x);//3
+
+
+var x = 1;
+function testFunc(){
+  "use strict";
+  var x = 5,
+  calc = x + 2; // 5 + 2 = 7 local
+  console.log(calc);
+}
+testFunc();
+console.log(x + 2); // 1 + 2= 3
+
+
+var x = 1;
+// Scope A
+// x is accessed from everywhere
+function testParent(){
+
+  // Scope B
+  // x is accessed from Scope B + scope C
+  "use strict";
+  var x = 5; 
+  function testChild (){
+
+    //Scope C
+    // x is accessed from Scope C only
+    var x = 100,
+    calc = x + 2; // 100 +2 = 102
+    console.log(calc);
+  }
+  return testChild();
+}
+
+testParent();
+console.log(x + 2);
+*/
+
+function testFather() { //Parent
+  "use strict";
+  var myName = "Samar";
+  console.log(myName);
+  function testSun(){// Child
+var myName = "Samar";
+console.log(myName);
+    function testGrand(){ // grand Child
+      var myName = "Samar";
+      console.log(myName);
+    }
+    
+  }
+ 
+ 
+}
+
+testFather();
+
+
+
+
